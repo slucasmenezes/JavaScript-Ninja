@@ -43,7 +43,7 @@ function args (arg1, arg2, arg3){
   if (arg1 === undefined || arg2 === undefined || arg3 === undefined) {
     return("Preencha todos os valores corretamente!")
   }else{
-    return(arg1 * arg2 * arg3 + 2);
+    return(arg1 * arg2 * arg3) + 2;
   }
 }
 
@@ -58,11 +58,11 @@ Crie uma função com as seguintes características:
 */
 
 function argsTwo (arg1, arg2, arg3){
-  if (arg1 != undefined && arg2 === undefined && arg3 === undefined){
+  if (arg1 !== undefined && arg2 === undefined && arg3 === undefined){
     return ("o valor 1 é: " + arg1)
-  }else if (arg1 != undefined && arg2 != undefined && arg3 === undefined) {
+  }else if (arg1 !== undefined && arg2 !== undefined && arg3 === undefined) {
     return ("a soma dos valores 1 e 2 é: " + (arg1 + arg2));
-  }else if (arg1 != undefined && arg2 != undefined && arg3 != undefined) {
+  }else if (arg1 !== undefined && arg2 !== undefined && arg3 !== undefined) {
     return("a soma do valor 1 e 2 dividido pelo valor 3 é: " + ((arg1 + arg2) / arg3) );
   }else
     return(false);
